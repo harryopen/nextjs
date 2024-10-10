@@ -15,21 +15,21 @@ interface Course{
   isFeatured: boolean,
 }
 function page() {
-   
+
   return (
-    
+
     <div className="min-h-screen bg-black py-12 pt-36 ">
       <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-white"> Top Courses {coursedata.courses.length}</h1>
       <div className=" flex flex-wrap justify-center  ">
-      {coursedata.courses.map((course)=>(
-           <CardContainer className="inter-var">
+      {coursedata.courses.map((course,key)=>(
+           <CardContainer key={key}className="inter-var">
            <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
            <CardItem
                     translateZ="50"
                     className="text-xl font-bold text-neutral-600 dark:text-white"
                   >
                     {course.title}
-                  </CardItem>   
+                  </CardItem>
            <CardItem translateZ="100" className="w-full mt-4">
           <Image
             src={python}
@@ -38,12 +38,12 @@ function page() {
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
           />
-          
+
         </CardItem>
           </CardBody>
           </CardContainer>
         ))}
-       
+
 
       </div>
 

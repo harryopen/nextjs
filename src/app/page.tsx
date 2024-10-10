@@ -19,7 +19,6 @@ function page() {
     <CardHover/>
     <Instructor/>
     <Footer/>
-    
    </main>
   )
 }

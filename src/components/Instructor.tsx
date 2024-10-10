@@ -46,18 +46,18 @@ const people = [
         "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80",
     },
   ];
-   
+
 function Instructor() {
   return (
     <div className="relative h-[40rem] overflow-hidden flex item-center  justify-center ">
           <WavyBackground className="w-full  max-w-7xl mx-auto flex flex-col items-center justify-center h-full ">
            <h2 className="text-2xl md:text-4xl  lg:text-7xl text-white font-bold  text-center mb-8">Meet Our Instructor</h2>
-           <p className="text-base md:text-lg  text-white text-center  mb-4">Jalandhar's Top educators </p>
+           <p className="text-base md:text-lg  text-white text-center  mb-4">Jalandhars Top educators </p>
            <div className=" flex ">
            <AnimatedTooltip items={people} />
            </div>
-            </WavyBackground> 
-      
+            </WavyBackground>
+
     </div>
   )
 }
